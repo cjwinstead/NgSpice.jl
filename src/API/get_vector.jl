@@ -97,7 +97,7 @@ function getmagnitudevec(name, maxlen=Int(maxintfloat()))
     abs.(data)
 end
 
-function getphasevec(name, maxlen=Int(maxintfloat))
+function getphasevec(name, maxlen=Int(maxintfloat()))
     _, __, data = get_vector_info(name, maxlen)
     angle.(data)
 end
